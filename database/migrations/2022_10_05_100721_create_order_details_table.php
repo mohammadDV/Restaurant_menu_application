@@ -15,11 +15,12 @@ class CreateOrderDetailsTable extends Migration
     {
         Schema::create('order_details', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('order_id');
             $table->foreignId('food_id');
             $table->double('amount',30,2)->unsigned();
             $table->tinyInteger('count');
             $table->tinyInteger('status');
-            $table->string('addons');
+            $table->text('addons');
             $table->timestamps();
         });
     }

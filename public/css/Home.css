@@ -10,7 +10,7 @@
 .u-section-1 .u-text-1 {
   text-shadow: 2px 2px 24px rgba(0,0,0,0.65);
   font-size: 3rem;
-  margin: 0 auto 0;
+  margin: 0 auto 20px;
 }
 
 .u-section-1 .u-list-1 {
@@ -361,7 +361,7 @@
 
   .u-section-1 .u-repeater-1 {
     grid-template-columns: 100%;
-    min-height: 934px;
+    min-height: 473px;
   }
 
   .u-section-1 .u-text-2 {

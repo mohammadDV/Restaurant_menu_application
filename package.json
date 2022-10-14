@@ -28,6 +28,7 @@
     "dependencies": {
         "jquery": "^3.6.1",
         "jquery-ui": "^1.13.2",
-        "vue-router": "^3.6.5"
+        "vue-router": "^3.6.5",
+        "vuejs-paginate": "^2.1.0"
     }
 }

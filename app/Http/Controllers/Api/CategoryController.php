@@ -11,13 +11,14 @@ class CategoryController extends Controller
 {
     public function index() {
         $categories  = Category::all();
-
         return CategoryResource::Collection($categories);
     }
 
     public function foods(Category $category) {
-        $categories  = Food::where('category_id',$category->id)->get();
 
-        return CategoryResource::Collection($categories);
+        $categories     = Food::where('category_id',$category->id)->get();
+        $data["foods"]  = $categories;
+        $data["addons"] = $category->addons;
+        return $data;
     }
 }

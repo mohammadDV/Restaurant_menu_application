@@ -17,6 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->id();
             $table->string("title");
             $table->string("amount");
+            $table->string('image')->nullable();
             $table->tinyInteger("status")->default(1);
             $table->foreignId("user_id")->constrained();
             $table->timestamps();
