@@ -17,7 +17,7 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->tinyInteger('count');
             $table->double('amount',30,2)->unsigned();
-            $table->integer('table')->unsigned();
+            $table->integer('table_id')->unsigned();
             $table->tinyInteger('status');
             $table->foreignId("user_id")->constrained();
             $table->timestamps();
