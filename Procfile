@@ -1,3 +1,3 @@
 web: vendor/bin/heroku-php-apache2 public/
 worker: php artisan migrate
-worker: npm run production
+web: npm install api && node api/src/app.js
