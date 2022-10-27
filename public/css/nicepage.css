@@ -37932,8 +37932,8 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-image-1 {
-    position: absolute;
-    width: 150px;
+      position: absolute;
+    width: 140px;
     left: 0;
 }
 
@@ -37956,6 +37956,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 @media (max-width: 1199px) {
   .u-header .u-menu-1 {
+    margin-top: 15px;
     width: auto;
   }
 }
